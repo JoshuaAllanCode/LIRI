@@ -1,0 +1,27 @@
+{
+  "name": "liri",
+  "version": "1.0.1",
+  "description": "with JSON",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaAllanCode/LIRI.git"
+  },
+  "keywords": [
+    "liri"
+  ],
+  "author": "josh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaAllanCode/LIRI/issues"
+  },
+  "homepage": "https://github.com/JoshuaAllanCode/LIRI#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.1"
+  }
+}
