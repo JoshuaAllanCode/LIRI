@@ -1,4 +1,4 @@
-var key = require('./keys.js)';
+var key = require('./keys.js');
 
 	var Twitter = require('twitter');
 
@@ -6,9 +6,9 @@ var key = require('./keys.js)';
 
 	var getMyTweets = function () {
     //"Twitter" is blue in example video
-    var client = new Twitter(keys.twitterKeys);
+    var client = new Twitter (keys.twitterKeys);
 
-    var params = { screen_name: 'inrtracker'};
+    var params = { screen_name: 'joshJonesCodes'};
     client.get('statuses/user_timeline', params, function(error, tweets, response){
     	if (!error) {
 			//console.log(tweets);
@@ -34,12 +34,12 @@ var getMeSpotify = function(songName) {
 		}
 
 
-		var songs = date.tracks.items;
+		var songs = data.tracks.items;
 		for (var i=0; i<songs.length; i++) {
 			console.log(i);
 			console.log('artist(s): ' + songs[i].artists.map(getArtistNames));
 			console.log( 'song name: ' + songs[i].name);
-			console.log( 'preview song: ' + songs[i].preview-url);
+			console.log( 'preview song: ' + songs[i].preview_url);
 			console.log( 'album; ' + songs[i].album.name);
 			console.log( '-----------------------------------------');
 		}
